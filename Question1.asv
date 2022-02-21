@@ -1,0 +1,27 @@
+   
+ %%Sample space:
+   step = -10;
+   starts = 15;
+   ends = 25;
+   n = (starts:step:ends)'; 
+   x1 = 3*cos((2*pi)/10*n);
+   x2 = 2*cos((2*pi)/12*n+pi/4);
+   
+%%X3[n]:
+   step = 1;
+   starts = 0;
+   ends = 50;
+   n = (starts:step:ends)'; 
+   x3 = sin(pi/17*n);
+%%X4[n]:
+   step = 1;
+   starts = 0;
+   ends = 25;
+   n = (starts:step:ends)'; 
+   x4 = sin(pi/17*n);
+% Plot the signal versus time:
+   figure;
+   plot(n,x);
+   xlabel('time (in seconds)');
+   title('Signal versus Time');
+   zoom xon;
